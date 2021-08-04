@@ -1,0 +1,2 @@
+rootProject.name = "P1-Activity_Life_Cycle"
+include ':app'

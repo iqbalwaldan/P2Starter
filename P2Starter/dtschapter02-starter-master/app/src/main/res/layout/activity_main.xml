@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/menuBtnConstraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageView
+        android:id="@+id/currentSongConstraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/nextSongConstraint"
+        app:layout_constraintStart_toEndOf="@+id/prevSongConstraint"
+        app:layout_constraintTop_toBottomOf="@+id/menuBtnConstraint"
+        app:srcCompat="@drawable/current_song_image" />
+
+    <ImageView
+        android:id="@+id/prevSongConstraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuBtnConstraint"
+        app:srcCompat="@drawable/prev_song_image" />
+
+    <ImageView
+        android:id="@+id/nextSongConstraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuBtnConstraint"
+        app:srcCompat="@drawable/next_song_image" />
+
+    <TextView
+        android:id="@+id/titleSongConstraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_light"
+        android:text="Banana Barain"
+        android:textColor="@color/putih"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentSongConstraint" />
+
+    <TextView
+        android:id="@+id/singerSongConstraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="DIE ANTWORD"
+        android:textColor="@color/putih"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleSongConstraint" />
+
+    <ImageView
+        android:id="@+id/waveConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/singerSongConstraint"
+        app:layout_constraintStart_toStartOf="@+id/singerSongConstraint"
+        app:layout_constraintTop_toBottomOf="@+id/singerSongConstraint"
+        app:srcCompat="@drawable/wave" />
+
+    <LinearLayout
+        android:id="@+id/navigateMenuConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="@+id/waveConstraint"
+        app:layout_constraintStart_toStartOf="@+id/waveConstraint"
+        app:layout_constraintTop_toBottomOf="@+id/waveConstraint">
+
+        <ImageView
+            android:id="@+id/repeatSongBtnConstraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/repeat" />
+
+        <ImageView
+            android:id="@+id/revindSongBtnConstraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/revind" />
+
+        <ImageView
+            android:id="@+id/playSongBtnConstraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/play_button" />
+
+        <ImageView
+            android:id="@+id/fastForwardSongBtnConstraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/fast_forward" />
+
+        <ImageView
+            android:id="@+id/speakerBtnConstraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/speaker" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
