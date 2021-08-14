@@ -4,46 +4,40 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Toast;
 
-import java.util.ArrayList;
+import com.example.myfilm.adapters.FilmAdapter;
+import com.example.myfilm.models.Film;
+
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements FilmAdapter.OnItemClickCallback {
 
-    public FilmAdapter filmAdapter;
-
-    //instansiasi Recyclerview
-    RecyclerView rvFilm;
-    RecyclerView.LayoutManager rvlmFilm;
-    List<Film> listFilm = new ArrayList<>();
+    public static final String KEY_ITEM = "item";
+    private RecyclerView filmsView;
+    private List<Film> films;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        filmsView = findViewById(R.id.rv_film);
+        films = MyFilm.getItems();
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+        FilmAdapter adapter = new FilmAdapter(films, this);
 
-        rvFilm = findViewById(R.id.rvFilm);
+        filmsView.setLayoutManager(layoutManager);
+        filmsView.setAdapter(adapter);
+    }
 
-        listFilm.add(new Film("End Game", "Waldan", "2020", "Iron Man Mati :')", R.drawable.film_strip));
-        listFilm.add(new Film("End Game", "Waldan", "2020", "Iron Man Mati :')", R.drawable.ic_launcher_background));
-        listFilm.add(new Film("End Game", "Waldan", "2020", "Iron Man Mati :')", R.drawable.btn_login));
-        listFilm.add(new Film("End Game", "Waldan", "2020", "Iron Man Mati :')", R.drawable.btn_login));
-        listFilm.add(new Film("End Game", "Waldan", "2020", "Iron Man Mati :')", R.drawable.btn_login));
-        listFilm.add(new Film("End Game", "Waldan", "2020", "Iron Man Mati :')", R.drawable.btn_login));
-        listFilm.add(new Film("End Game", "Waldan", "2020", "Iron Man Mati :')", R.drawable.btn_login));
-        listFilm.add(new Film("End Game", "Waldan", "2020", "Iron Man Mati :')", R.drawable.btn_login));
-        listFilm.add(new Film("End Game", "Waldan", "2020", "Iron Man Mati :')", R.drawable.btn_login));
-        listFilm.add(new Film("End Game", "Waldan", "2020", "Iron Man Mati :')", R.drawable.btn_login));
-        listFilm.add(new Film("End Game", "Waldan", "2020", "Iron Man Mati :')", R.drawable.btn_login));
-
-        filmAdapter = new FilmAdapter(this, listFilm);
-        rvlmFilm = new LinearLayoutManager(getApplicationContext());
-        rvFilm.setAdapter(filmAdapter);
-        rvFilm.setLayoutManager(rvlmFilm);
-
+    @Override
+    public void onItemClicked(Film films) {
+        Toast.makeText(this, "Click", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, InfoFilm.class);
+        intent.putExtra(KEY_ITEM, films);
+        startActivity(intent);
     }
 }
-
