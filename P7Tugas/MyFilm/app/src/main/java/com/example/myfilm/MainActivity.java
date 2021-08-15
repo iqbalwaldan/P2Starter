@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements FilmAdapter.OnIte
     @Override
     public void onItemClicked(Film films) {
         Toast.makeText(this, "Click", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, InfoFilm.class);
+        Intent intent = new Intent(this, TempleteDetailFilm.class);
         intent.putExtra(KEY_ITEM, films);
         startActivity(intent);
     }

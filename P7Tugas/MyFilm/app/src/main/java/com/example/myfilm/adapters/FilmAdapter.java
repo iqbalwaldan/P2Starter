@@ -36,9 +36,10 @@ public class FilmAdapter extends RecyclerView.Adapter<FilmAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull FilmAdapter.ViewHolder holder, int position) {
         Film item = films.get(position);
-        Glide.with(holder.itemView.getContext())
-                .load(item.getBanner())
-                .into(holder.imageFilm);
+//        Glide.with(holder.itemView.getContext())
+//                .load(item.getBanner())
+//                .into(holder.imageFilm);
+        holder.imageFilm.setImageResource(item.getBanner());
         holder.txtJudul.setText(item.getJudul());
         holder.txtTahun.setText(item.getTahun());
         holder.itemView.setOnClickListener(new View.OnClickListener() {

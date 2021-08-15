@@ -8,9 +8,13 @@ public class Film implements Parcelable {
     private String sutradara;
     private String tahun;
     private String deskripsi;
-    private String banner;
+    private int banner;
 
-    public Film(String judul, String sutradara, String tahun, String deskripsi, String banner) {
+    public Film(){
+
+    }
+
+    public Film(String judul, String sutradara, String tahun, String deskripsi, int banner) {
         this.judul = judul;
         this.sutradara = sutradara;
         this.tahun = tahun;
@@ -50,11 +54,11 @@ public class Film implements Parcelable {
         this.deskripsi = deskripsi;
     }
 
-    public String getBanner() {
+    public int getBanner() {
         return banner;
     }
 
-    public void setBanner(String banner) {
+    public void setBanner(int banner) {
         this.banner = banner;
     }
 
@@ -73,7 +77,7 @@ public class Film implements Parcelable {
         dest.writeString(this.sutradara);
         dest.writeString(this.tahun);
         dest.writeString(this.deskripsi);
-        dest.writeString(this.banner);
+        dest.writeInt(this.banner);
     }
 
     public void readFromParcel(Parcel source) {
@@ -81,7 +85,7 @@ public class Film implements Parcelable {
         this.sutradara = source.readString();
         this.tahun = source.readString();
         this.deskripsi = source.readString();
-        this.banner = source.readString();
+        this.banner = source.readInt();
     }
 
     protected Film(Parcel in) {
@@ -89,7 +93,7 @@ public class Film implements Parcelable {
         this.sutradara = in.readString();
         this.tahun = in.readString();
         this.deskripsi = in.readString();
-        this.banner = in.readString();
+        this.banner = in.readInt();
     }
 
     public static final Creator<Film> CREATOR = new Creator<Film>() {
