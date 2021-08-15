@@ -7,14 +7,14 @@ public class Film implements Parcelable {
     private String judul;
     private String sutradara;
     private String tahun;
-    private String deskripsi;
+    private int deskripsi;
     private int banner;
 
     public Film(){
 
     }
 
-    public Film(String judul, String sutradara, String tahun, String deskripsi, int banner) {
+    public Film(String judul, String sutradara, String tahun, int deskripsi, int banner) {
         this.judul = judul;
         this.sutradara = sutradara;
         this.tahun = tahun;
@@ -46,11 +46,11 @@ public class Film implements Parcelable {
         this.tahun = tahun;
     }
 
-    public String getDeskripsi() {
+    public int getDeskripsi() {
         return deskripsi;
     }
 
-    public void setDeskripsi(String deskripsi) {
+    public void setDeskripsi(int deskripsi) {
         this.deskripsi = deskripsi;
     }
 
@@ -76,7 +76,7 @@ public class Film implements Parcelable {
         dest.writeString(this.judul);
         dest.writeString(this.sutradara);
         dest.writeString(this.tahun);
-        dest.writeString(this.deskripsi);
+        dest.writeInt(this.deskripsi);
         dest.writeInt(this.banner);
     }
 
@@ -84,7 +84,7 @@ public class Film implements Parcelable {
         this.judul = source.readString();
         this.sutradara = source.readString();
         this.tahun = source.readString();
-        this.deskripsi = source.readString();
+        this.deskripsi = source.readInt();
         this.banner = source.readInt();
     }
 
@@ -92,7 +92,7 @@ public class Film implements Parcelable {
         this.judul = in.readString();
         this.sutradara = in.readString();
         this.tahun = in.readString();
-        this.deskripsi = in.readString();
+        this.deskripsi = in.readInt();
         this.banner = in.readInt();
     }
 

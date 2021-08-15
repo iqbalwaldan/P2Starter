@@ -15,8 +15,6 @@ import java.util.List;
 
 public class TempleteDetailFilm extends AppCompatActivity {
 
-    private static final String ITEM_EXTRA = "item_extra";
-
     private List<Film> films;
 
     @Override
@@ -31,11 +29,11 @@ public class TempleteDetailFilm extends AppCompatActivity {
         TextView tahun = findViewById(R.id.tahun);
         TextView deskripsi = findViewById(R.id.deskripsi);
 
-        Film film = getIntent().getParcelableExtra(ITEM_EXTRA);
-            bannerFilm.setImageResource(film.getBanner());
-            judul.setText(film.getJudul());
-            sutradara.setText(film.getSutradara());
-            tahun.setText(film.getTahun());
-            deskripsi.setText(film.getDeskripsi());
+        Film film = getIntent().getParcelableExtra(MainActivity.KEY_ITEM);
+        bannerFilm.setImageResource(film.getBanner());
+        judul.setText(film.getJudul());
+        sutradara.setText(film.getSutradara());
+        tahun.setText(film.getTahun());
+        deskripsi.setText(film.getDeskripsi());
     }
 }

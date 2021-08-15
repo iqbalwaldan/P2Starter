@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">My Film</string>
+    <string name="des_iron_man">Ketika Tony Stark, seorang industrialis, ditangkap, dia membuat baju lapis baja berteknologi tinggi untuk melarikan diri. Begitu dia berhasil melarikan diri, dia memutuskan untuk menggunakan jasnya untuk melawan kekuatan jahat untuk menyelamatkan dunia.</string>
+    <string name="des_iron_man_2">Tony Stark mendapat tekanan dari berbagai sumber, termasuk pemerintah, untuk membagikan teknologinya kepada dunia. Dia harus menemukan cara untuk melawan mereka sambil juga menangani musuh-musuhnya yang lain.</string>
+    <string name="des_iron_man_3">Tony Stark bertemu dengan musuh tangguh bernama Mandarin. Setelah gagal mengalahkan musuhnya, Tony memulai perjalanan penemuan diri saat dia bertarung melawan Mandarin yang kuat.</string>
+    <string name="des_spider_man_homecoming">Peter Parker mencoba menghentikan Vulture dari menjual senjata yang dibuat dengan teknologi canggih Chitauri sambil mencoba menyeimbangkan hidupnya sebagai siswa sekolah menengah biasa.</string>
+    <string name="des_spider_man_far_from_home">Peter Parker, superhero Spider-Man tercinta, menghadapi empat monster elemental penghancur saat berlibur di Eropa. Segera, ia menerima bantuan dari Mysterio, sesama pahlawan dengan asal-usul misterius.</string>
+    <string name="des_the_avengers_infinity_war">The Avengers harus menghentikan Thanos, seorang panglima perang intergalaksi, dari mendapatkan semua infinity stone. Namun, Thanos siap melakukan apa saja untuk menjalankan rencananya yang gila.</string>
+    <string name="des_the_avengers_end_game">Setelah Thanos, seorang panglima perang intergalaksi, menghancurkan setengah dari alam semesta, Avengers harus bersatu kembali dan berkumpul lagi untuk menghidupkan kembali sekutu mereka yang hancur dan memulihkan keseimbangan.</string>
 </resources>

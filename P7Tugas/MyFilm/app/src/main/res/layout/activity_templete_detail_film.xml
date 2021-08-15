@@ -14,15 +14,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageFilm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/film_strip"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="10dp"/>
+        <ImageView
+            android:id="@+id/imageFilm"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/spider_man_homecoming"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/judul"
