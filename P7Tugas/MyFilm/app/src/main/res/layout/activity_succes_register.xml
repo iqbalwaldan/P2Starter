@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SuccesResetPassword">
+    tools:context=".SuccesRegister">
 
     <ImageView
         android:id="@+id/success_image"
@@ -33,7 +33,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginRight="24dp"
-        android:text="You have successfully changed password. Please use your new passwords when logging in"
+        android:text="You have successfully register. Please logging in"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintLeft_toLeftOf="parent"
