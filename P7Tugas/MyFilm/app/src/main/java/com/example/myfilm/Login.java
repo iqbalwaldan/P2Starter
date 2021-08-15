@@ -28,6 +28,11 @@ public class Login extends AppCompatActivity {
         editTextPassword = findViewById(R.id.inp_txt_password);
     }
 
+    public void clickForgot(View view) {
+        Intent i = new Intent(Login.this, ForgotPassword.class);
+        startActivity(i);
+    }
+
     public void postLogin(View view) {
         if(TextUtils.isEmpty(editTextEmail.getText().toString().trim()) &&
                 TextUtils.isEmpty(editTextPassword.getText().toString().trim())) {

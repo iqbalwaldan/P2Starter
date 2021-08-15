@@ -8,10 +8,14 @@
         <entry key="..\:/AndroidStudioProjects/VSGA Mobile/P7Tugas/MyFilm/app/src/main/res/drawable/btn.xml" value="0.2942708333333333" />
         <entry key="..\:/AndroidStudioProjects/VSGA Mobile/P7Tugas/MyFilm/app/src/main/res/drawable/btn_login.xml" value="0.2942708333333333" />
         <entry key="..\:/AndroidStudioProjects/VSGA Mobile/P7Tugas/MyFilm/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2942708333333333" />
+        <entry key="..\:/AndroidStudioProjects/VSGA Mobile/P7Tugas/MyFilm/app/src/main/res/layout/activity_forgot_password.xml" value="0.278125" />
         <entry key="..\:/AndroidStudioProjects/VSGA Mobile/P7Tugas/MyFilm/app/src/main/res/layout/activity_info_film.xml" value="0.1347517730496454" />
         <entry key="..\:/AndroidStudioProjects/VSGA Mobile/P7Tugas/MyFilm/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/VSGA Mobile/P7Tugas/MyFilm/app/src/main/res/layout/activity_main.xml" value="0.278125" />
+        <entry key="..\:/AndroidStudioProjects/VSGA Mobile/P7Tugas/MyFilm/app/src/main/res/layout/activity_reset_password.xml" value="0.278125" />
         <entry key="..\:/AndroidStudioProjects/VSGA Mobile/P7Tugas/MyFilm/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/VSGA Mobile/P7Tugas/MyFilm/app/src/main/res/layout/activity_succes_reset_password.xml" value="0.278125" />
+        <entry key="..\:/AndroidStudioProjects/VSGA Mobile/P7Tugas/MyFilm/app/src/main/res/layout/activity_success.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/VSGA Mobile/P7Tugas/MyFilm/app/src/main/res/layout/activity_templete_detail_film.xml" value="0.278125" />
         <entry key="..\:/AndroidStudioProjects/VSGA Mobile/P7Tugas/MyFilm/app/src/main/res/layout/film_row.xml" value="0.22" />
       </map>

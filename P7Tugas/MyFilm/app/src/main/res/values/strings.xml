@@ -1,5 +1,23 @@
 <resources>
     <string name="app_name">My Film</string>
+    <string name="logo_text">DTS Kominfo</string>
+    <string name="sign_in">Sign In</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="get_started">Get Started</string>
+    <string name="log_in">Log In</string>
+    <string name="txt_code">Reset Code</string>
+    <string name="enter_your_txt_email">Enter Your Email</string>
+    <string name="enter_reset_code">Enter Reset Code</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="send_request">Send Request</string>
+    <string name="change_password">Change Password</string>
+
     <string name="des_iron_man">Ketika Tony Stark, seorang industrialis, ditangkap, dia membuat baju lapis baja berteknologi tinggi untuk melarikan diri. Begitu dia berhasil melarikan diri, dia memutuskan untuk menggunakan jasnya untuk melawan kekuatan jahat untuk menyelamatkan dunia.</string>
     <string name="des_iron_man_2">Tony Stark mendapat tekanan dari berbagai sumber, termasuk pemerintah, untuk membagikan teknologinya kepada dunia. Dia harus menemukan cara untuk melawan mereka sambil juga menangani musuh-musuhnya yang lain.</string>
     <string name="des_iron_man_3">Tony Stark bertemu dengan musuh tangguh bernama Mandarin. Setelah gagal mengalahkan musuhnya, Tony memulai perjalanan penemuan diri saat dia bertarung melawan Mandarin yang kuat.</string>
